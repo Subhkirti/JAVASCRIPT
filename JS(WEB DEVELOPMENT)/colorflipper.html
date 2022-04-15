@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<center>
+<head>
+<h1>COLOR FLIPPER GAME</h1>
+</head>
+<script src="https://kit.fontawesome.com/6b52d0ce66.js" crossorigin="anonymous"></script>
+<body>
+<div>
+<input type="text" id="input1" placeholder="ENTER YOUR COLOR...">
+<button type="button" value="Click here to change color!!" onclick="changeColor()">CLICK ME!</button>
+<br>
+<i id="container1" class="fas fa-address-card"></i>
+</div>
+</body>
+<style>
+    h1{
+        font-size:3rem;
+    }
+    i{
+        color:black;
+        font-size:30rem;
+    }
+    input{
+        padding:1.5%;
+        font-size:1rem;
+        border:2px solid black;
+        border-radius:0.3rem;
+    }
+    button{
+        padding: 1.5%;
+        border:2px solid black;
+        border-radius:0.3rem;
+        background-color: transparent;
+    }
+    button:hover{
+        background-color: black;
+        color:white;
+        cursor:pointer;
+    }
+</style>
+<script>
+    function changeColor(){
+    document.getElementById("container1").style.color = document.getElementById("input1").value;    
+    }
+</script>
+</center>
+</html>
+
+ 

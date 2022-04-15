@@ -1,0 +1,24 @@
+img{
+    height:40em;
+    width: 80em;
+}
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+div.bottom{
+    height:6em;
+    width:10em;
+    text-align: center;
+    color:darkblue;
+    font-size:50px;
+    text-decoration: underline;
+    font-family:Verdana;
+}
+.btn{
+    font-size:20px;
+    padding:7px;
+    font-family:verdana;
+}

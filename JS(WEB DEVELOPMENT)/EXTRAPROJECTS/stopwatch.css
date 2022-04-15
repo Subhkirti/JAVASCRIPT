@@ -1,0 +1,38 @@
+body{
+    background-color:#191970;
+    color:white;
+}
+h1{
+    color:white;
+    font-size:7rem;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-size:4rem
+}
+#main{
+    display: grid;
+    place-items: center;
+}
+#child{
+    text-align: center;
+    width:30rem;
+    height:20rem;
+    background-color:transparent;
+    border:2px solid white;
+    border-radius: 3%;
+}
+button{
+    background-color: transparent;
+    border:1px solid white;
+    font-size: 2rem;
+    padding:6%;
+    color:white;
+    border-radius: 1rem;
+}
+button:hover{
+    background-color: white;
+    color:#191970;
+    cursor:pointer;
+}

@@ -1,0 +1,79 @@
+
+#hangman{
+    margin-top:30%; 
+    background-color:white;
+    color:black;
+    width:13rem;
+    height:15rem;
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:white;
+    font-size:3rem;
+    padding:1%;
+}
+#hangman{
+    display:flex;
+    flex-direction: column;
+}
+span #clue{
+    font-size:2rem;
+    word-spacing: 4%;
+}
+#main_div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+ 
+}
+
+h3{
+    
+    font-family:Verdana;
+    font-size:2rem;
+    margin: 5rem 0rem 4rem 0rem;
+    color:white;
+    text-align:center;
+}
+h1{
+    font-size: 7rem;
+    color:white;
+    display: flex;
+    font-family: verdana;
+    margin-bottom: 1%;
+}
+body{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:white;
+    line-height: 2px;
+}
+.letter{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    font-size:2rem;
+    margin:1rem;
+    width:3rem;
+    height:3rem;
+    justify-content: center;
+    background-color: transparent;
+    color:white;
+    border:0.1rem solid white;
+    border-radius: 0.4rem;
+    align-items: center;
+}
+.letter:hover{
+    background-color: white;
+    color:black;
+    cursor:pointer;
+    
+}
+
+
+

@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .allbadge{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  
+    padding: 2rem;
+    width: 20rem;
+    box-shadow: 2px 2px 2px 3px gray;
+    border-radius: 5px;
+  }
+  
+  .text-with-badge , .text-with-large-badge{
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    position: relative;
+  
+  }
+  .text, .large_text{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .text_badge , .left_butoon_badge, #toggle_badge{
+    background-color: blue;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  /* large badge */
+  
+  .large_badge{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left:8rem;
+    top:-5px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* button-left-badge  */
+  
+  .button-left-badge , .button-toggle-badge{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  
+  .left_button, .toggle_button{
+    position: relative;
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: none;
+    margin-left:0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+  }
+  
+  .left_butoon_badge , #toggle_badge{
+    background-color: pink;
+    position: absolute;
+    top: -10px;
+    left:-10px;
+  
+  }
+  
+  .toggle_button{
+    position: relative;
+  }
+  
+  #toggle_badge{
+    position: absolute;
+    left:45px;
+    display:flex;
+  }
+  .icon-badge_div{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: baseline;
+  }
+  
+  .icon{
+    margin-left:0.5rem;
+    font-size: 2rem; 
+  }
+  
+  .icon_badge{
+    position:relative;
+    top: -1.1rem;
+    left:-0.9rem ;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

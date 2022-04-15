@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1 style="text-align:center; font-size:45px">MOM TURN</h1>
+<script>
+eles = [
+"Preeti Thakur",
+"Rupali Singh",
+"Sathya",
+"Gurpreet",
+"SudhaRani",
+"Preeti Ranolia",
+"Ruchi Rajput",
+"Pranjali Singh",
+"Megha",
+"Kamini Devi",
+"Navya Shree",
+"Shalini Singh",
+"Jyoti Chauhan",
+"shubhangi siddhapure",
+"Pragathi reddy",
+"Radhika Verma",
+"Sarika",
+"Dhanashree",
+"Rubina",
+"Pinky Jangir",
+"Manjula GP",
+"shaik shabeera begum",
+"M.Sindhu",
+"Divya Rajnal",
+"Vedavathi",
+"Shailaja Begari",
+"Himani",
+"Samridhi",
+"Angel",
+"Preeti Thapa.",
+"Priya yadav",
+"Deepa",
+"Shirisha Dharavath",
+"Tanjum",
+"Muskan Singh",
+"Anusha",
+"Pravalika lavolla",
+"Sowjanya",
+"Pragna Dasari",
+"Anjali malviya",
+"Shireen Nazneen",
+"Rasmita Dalai",
+];
+function update() {
+  var j = Math.floor(Math.random() * eles.length);
+  document.getElementById("firstPerson").innerHTML = eles[j];
+  j = Math.floor(Math.random() * eles.length);
+  document.getElementById("secondPerson").innerHTML = eles[j];}
+</script>
+<style>.item {
+    width: 300px;
+    height: 300px;
+    background-color: darkcyan;
+    margin: 15px;
+    padding: 25px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "verdana";
+  }</style>
+</head>
+<body style="background-color: pink">
+    <div class="main" style="display:flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;">
+
+  <div class="main2" style="display: flex;
+        justify-content: center;
+        padding:2px">
+        <div class="item first" style="text-content:center;font-size:45px">
+          Responsibilty to write Today's M.O.M.:
+            </div>
+        <div class="item second" >
+            <div id="firstPerson" style="font-size:45px"></div>
+        </div>
+        <div class="item third">
+            <div id="secondPerson"style="font-size:45px"></div>
+        </div>
+        </div>
+        <button class="item fourth" style="height: 40px;
+        font-family:verdana;
+        cursor: pointer;
+        background: yellow;
+        color: black;" onclick="update()">
+          NEXT DAY!!
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <div id="hen"> </div>
+ <div id="hen2"></div>
+<style>
+#hen{
+    border:2px solid white;
+    background-color: black;
+    width:34px;
+    height:34px;
+}
+</style>
+<script>
+function clone(){
+    var h1=document.getElementById("hen")
+    var h2=h1.cloneNode(true)
+    document.getElementById("hen2").appendChild(h2)
+}
+</script>
+<button onclick="clone()">sum</button>
+</html>

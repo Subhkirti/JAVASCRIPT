@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dice Game</title>
+</head>
+<body>
+    <center>
+	<div class="container">
+		<h1>..DICE ROLLING GAME..</h1>
+        <h3>Lets Start !</h3>
+		<div class="dice">
+			<img class="img1" src="dice6.png">
+		</div>
+		<div class="dice">
+			<img class="img2" src="dice6.png">
+		</div>
+	</div>
+
+	<div class="container bottom">
+		<button type="button" class="butn" onClick="rollTheDice()">
+			Shake It!
+		</button>
+	</div>
+  
+    <style>
+            .dice {
+                display: inline-block;
+                margin: 20px;
+            }
+            body {
+                background-color: black;
+                
+            }
+            h3 {
+                margin: 30px;
+                font-family:verdana;
+                font-size: 40px;
+                color: white;
+            }
+            h1{
+                font-size:50px;
+                margin: 10px;
+                font-family: "Lobster", cursive;
+                color: white;
+            }
+        
+       
+            .butn {
+                margin:30px;
+                background:white;
+                font-family:verdana;
+                border-radius: 15px;
+                color: black;
+                font-size: 25px;
+                padding: 1%;
+                cursor:pointer;
+                
+            }
+            .butn:hover {
+                background: lightgrey;
+                text-decoration: none;
+            }
+        </style>
+<script>   
+    
+        // Function to roll the dice
+        function rollTheDice() {
+                var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+                var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+                document.querySelector(".img1").setAttribute("src",
+                    "dice" + randomNumber1 + ".png");
+    
+                document.querySelector(".img2").setAttribute("src",
+                    "dice" + randomNumber2 + ".png");
+                document.querySelector("h3").innerHTML=randomNumber1+randomNumber2              
+        }
+    </script>
+<center>
+</body>

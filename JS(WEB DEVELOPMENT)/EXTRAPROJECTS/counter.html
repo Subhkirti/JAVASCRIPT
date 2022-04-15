@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter</title>
+<body>
+    <center>
+        <div class="color">
+            <h2 class="heading">COUNTER</h2>
+            <h1 id="count">0</h1>
+            <button class="btn1" onclick="decrease()">Decrease</button>
+            <button class="btn2" onclick="reset()">Reset</button>
+            <button class="btn3" onclick="increase()">Increase</button>
+        </div>
+    </center>
+</body>
+<style>
+    div {
+        background-color: lightgreen;
+        border: 2px;
+        height: 400px;
+        width: 800px;
+        margin: 80px;
+    }
+
+    .heading {
+        padding-top: 30px;
+        color: black;
+        font-size: 80px;
+        font-family: verdana;
+    }
+
+    button.btn1 {
+        height: 60px;
+        width: 120px;
+        font-size: 20px;
+        padding: 0.6px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    button.btn1:hover {
+        color: white;
+        background-color: black;
+    }
+
+    button.btn2 {
+        height: 60px;
+        width: 120px;
+        font-size: 20px;
+        padding: 0.6px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    button.btn2:hover {
+        color: white;
+        background-color: black;
+    }
+
+    button.btn3 {
+        height: 60px;
+        width: 120px;
+        font-size: 20px;
+        padding: 0.6px;
+        cursor: pointer;
+    }
+
+    button.btn3:hover {
+        color: white;
+        background-color: black;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 34px;
+        font-family: verdana;
+    }
+</style>
+<script>
+    const element = document.querySelector(".count")
+    function decrease() {
+        document.getElementById("count").innerHTML -= 1
+
+    }
+    function increase() {
+        var a = document.getElementById("count").innerHTML
+        var b = Number(a)
+        b += 1
+        document.getElementById("count").innerHTML = b
+    }
+    function reset() {
+        document.getElementById("count").innerHTML = 0
+    }
+</script>
+
+</html>

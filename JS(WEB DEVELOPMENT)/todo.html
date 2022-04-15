@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>ToDo</title>
+<div class="color">
+<h1>..TODO LIST..</h1>
+</div>
+<div>
+<input placeholder="Enter Your Task...." id="input"></input>
+<button class="add" onClick="addall()">Add</button>
+</div>
+<ul id="todoList"></ul>
+<style>
+    .add{
+        cursor:pointer;
+    }
+    h1{
+        font-size:70px;
+        font-family:verdana;
+        text-align:center;
+        border-radius:25px ;
+        background: linear-gradient(to left,rgb(4, 234, 250),
+          rgb(0, 100, 100));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+         }
+    .color{
+        background-color:black;
+    }
+
+     input{
+         font-size:30px;
+         font-family:verdana;
+         
+     }
+     .add{
+        font-size:30px;
+        font-family:verdana;
+         
+    }
+    ul{
+        font-size:30px;
+        color:black;
+    }
+    button:hover{
+        background-color:black;
+        color:white;
+    }
+    body{
+        background-color:rgb(0, 217, 255);
+    }
+    .close{
+        font-size:20px;
+        padding:4px;
+    }
+    .closeall{
+        cursor:pointer;
+        font-family:verdana;
+        font-size:20px;
+        padding:6px;
+    }
+</style>
+<script>
+    function addall(){
+        var de=document.createElement("button")
+        de.innerHTML="Delete"
+        de.onclick=function(){
+            li.style.display="none"
+        }
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("input").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue==='') {
+            alert("You must write something!");
+        } else {
+            document.getElementById("todoList").appendChild(li).appendChild(de);
+        }
+        document.getElementById("input").value="";
+       }
+     function closeall(){
+        var lst = document.getElementsByTagName("ul");
+        lst[0].innerHTML="";
+      }
+</script>
+<button class="closeall" onclick="closeall()">CLOSE ALL!</button>
+</body>
+</html>

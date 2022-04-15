@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<center>
+<h1>CURRENT DATE AND TIME</h1>
+<style>
+h1{
+    font-size:60px;
+    text-shadow:2px 3px crimson
+}
+#maindiv{
+    border-radius: 15px;
+    background:crimson;
+  margin: 100px; 
+  width: 200px;
+  height: 190px;  
+  padding-top:45px
+}
+#head{
+    text-shadow: 2px 3px #000000;
+    font-size:40px;
+    color:white;
+    font-family:verdana;
+}
+#head2{
+    text-shadow: 2px 3px #000000;
+    font-size:50px;
+    color:white;
+    font-family:verdana;
+}
+#time{
+    font-size:35px;
+    color:white;
+    text-shadow: 2px 2px #000000;
+   
+}
+</style>
+<body>
+<div id="maindiv">
+    <b><span id="time"></span></b>
+    <sub id="head"></sub>
+    <sup id="head2"></sup>
+</div>
+</center>
+</body>
+<script>
+var date = new Date(),
+s = date.getSeconds()
+m = date.getMinutes()
+h = date.getHours()
+year = date.getFullYear(),
+month = date.getMonth(),
+day = date.getUTCDate(),
+months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+document.getElementById('head').innerHTML = months[month] + " " + day+"<br>";
+document.getElementById('head2').innerHTML = year
+document.getElementById('time').innerHTML=h+":"+m+":"+s+"<br>"
+</script>
+
+</html

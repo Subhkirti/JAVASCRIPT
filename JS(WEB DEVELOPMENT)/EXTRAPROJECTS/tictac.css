@@ -1,0 +1,53 @@
+h3{
+    text-shadow:2px 2px grey;
+    font-size:35px;
+    color:darkred;
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin-right: 3%;
+}
+.inp{
+    margin-right: 1%;
+    width:35%;
+    margin-bottom: 2%;
+    font-size:20px;
+    font-family: verdana;
+    border-radius: 6px;
+    color:darkred; 
+}
+h1{
+    text-shadow:3px 2px grey;
+    font-size:55px;
+    color:darkred;
+    display: flex;
+    justify-content: center;
+}
+.grid-container {
+margin-left: 30%;
+margin-top:45px;
+width:30em;   
+display: flex;
+justify-content: center; 
+height: 30em;
+display: grid;
+grid-gap:2.3%;
+grid-template-columns: auto auto auto;
+background-color: darkred;
+padding: 10px;
+}
+.grid-item {
+background-color:white;
+padding: 20px;
+font-size:90px;
+color:darkred;
+font-family: verdana;
+width:100px;
+height:100px;
+text-align: center; 
+cursor:pointer;
+}
+body{
+background-color:white;
+}

@@ -1,0 +1,1 @@
+// ES6:-ECMAscript 2015 or ECMAscript6. IT is the Standard  that js is uses. It provides the specification on how js programming langauage should work. it published in June.
