@@ -1,88 +1,128 @@
 <!DOCTYPE html>
 <html>
-<body>
-<title>ToDo</title>
-<div class="color">
-<h1>..TODO LIST..</h1>
-</div>
-<div>
-<input placeholder="Enter Your Task...." id="input"></input>
-<button class="add" onClick="addall()">Add</button>
-</div>
-<ul id="todoList"></ul>
-<style>
-    .add{
-        cursor:pointer;
-    }
-    h1{
-        font-size:70px;
-        font-family:verdana;
-        text-align:center;
-        border-radius:25px ;
-        background: linear-gradient(to left,rgb(4, 234, 250),
-          rgb(0, 100, 100));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-         }
-    .color{
-        background-color:black;
-    }
 
-     input{
-         font-size:30px;
-         font-family:verdana;
-         
-     }
-     .add{
-        font-size:30px;
-        font-family:verdana;
-         
-    }
-    ul{
-        font-size:30px;
-        color:black;
-    }
-    button:hover{
-        background-color:black;
-        color:white;
-    }
-    body{
-        background-color:rgb(0, 217, 255);
-    }
-    .close{
-        font-size:20px;
-        padding:4px;
-    }
-    .closeall{
-        cursor:pointer;
-        font-family:verdana;
-        font-size:20px;
-        padding:6px;
-    }
-</style>
-<script>
-    function addall(){
-        var de=document.createElement("button")
-        de.innerHTML="Delete"
-        de.onclick=function(){
-            li.style.display="none"
-        }
-        var li = document.createElement("li");
-        var inputValue = document.getElementById("input").value;
-        var t = document.createTextNode(inputValue);
-        li.appendChild(t);
-        if (inputValue==='') {
-            alert("You must write something!");
-        } else {
-            document.getElementById("todoList").appendChild(li).appendChild(de);
-        }
-        document.getElementById("input").value="";
-       }
-     function closeall(){
-        var lst = document.getElementsByTagName("ul");
-        lst[0].innerHTML="";
-      }
-</script>
-<button class="closeall" onclick="closeall()">CLOSE ALL!</button>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>ToDo</title>
+</head>
+
+<body>
+
+    <div class="color">
+        <h1>..TODO LIST..</h1>
+    </div>
+    <div class="main">
+     
+        <input placeholder="Enter Your Task...." id="input"></input>
+        <button class="add" onClick="addall()">+</button>
+   
+        <ul id="todoList"></ul>
+        <style>
+            * {
+                margin: 0;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            .main {
+                line-height: 3rem;
+                margin-left: 2rem;
+            }
+           
+            h1 {
+                margin-bottom: 2rem;
+                font-size: 70px;
+                font-family: verdana;
+                text-align: center;
+                border-radius: 25px;
+                background: linear-gradient(to left, rgb(33, 250, 18), rgb(33, 250, 18), rgb(237, 249, 3),
+                        rgb(33, 250, 18),rgb(33, 250, 18) );
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+
+            .color {
+                background-color: black;
+            }
+
+            li {
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+               
+            }
+
+            input {
+                background-color: black;
+                margin-bottom: 2rem;
+                font-size: 24px;
+                outline: none;
+                padding: 1.4%;
+                border: none;
+                border-radius: 6px;
+                width: 40%;
+                color: rgb(27, 206, 15);
+            }
+            body {
+                background-color: rgb(27, 206, 15);
+            }
+            input::placeholder{
+                color: rgb(27, 206, 15);
+            }
+            .close {
+                font-size: 20px;
+                padding: 4px;
+            }
+
+            .closeall {
+                margin-top: 3rem;
+                font-size: 20px;
+
+            }
+            .add {
+                font-size: 32px;
+                width:7%;
+               
+            }
+            button {
+                background-color: rgb(1, 1, 1);
+                color: rgb(33, 250, 18);
+                border: none;
+                padding: 1%;
+                border-radius: 9px;
+                cursor: pointer;
+            }
+        </style>
+        <script>
+            function addall() {
+                var de = document.createElement("button")
+                de.innerHTML = "X"
+                de.style.padding="0.9% 2% 0.9% 2%"
+                de.style.borderRadius="5px"
+                de.style.textAlign="center"
+                de.onclick = function() {
+                    li.style.display = "none"
+                }
+                var li = document.createElement("li");
+                var inputValue = document.getElementById("input").value;
+                var t = document.createTextNode(inputValue);
+                li.appendChild(t);
+                if (inputValue === '') {
+                    alert("You must write something!");
+                } else {
+                    document.getElementById("todoList").appendChild(li).appendChild(de);
+                }
+                document.getElementById("input").value = "";
+            }
+            function closeall() {
+                var lst = document.getElementsByTagName("ul");
+                lst[0].innerHTML = "";
+            }
+        </script>
+        <button class="closeall" onclick="closeall()">CLOSE ALL!</button>
+
+    </div>
 </body>
+
 </html>
