@@ -8,9 +8,9 @@ function login(){
         alert("You have must write Password!")
     }
     else{
-        var d=document.createElement("button")
-        d.innerHTML="You are Login Succesfully!!"
-        document.getElementById("imp").innerHTML=d
+       
+        alert("You are Login Succesfully!!")
+        
         
     }
 }
