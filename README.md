@@ -9,7 +9,10 @@ I have made many projects in Javascript like Todo-list, quote changer, Dice roll
 
 https://user-images.githubusercontent.com/89776606/169014260-3d99c0ac-1185-4268-a281-b101f8299694.mov
 <hr>
+
 # Face 📚  Front-page 
+
+
 
 <img width="945" alt="Screenshot 2022-05-18 at 4 12 29 PM" src="https://user-images.githubusercontent.com/89776606/169021294-d1dc2d48-6671-4fa6-92a5-bd3520c2140e.png">
 
